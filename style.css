@@ -1,0 +1,172 @@
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Lobster+Two:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+   background-image: radial-gradient(rgb(252, 4, 53),rgb(198, 20, 221));
+}
+
+#maggie .maggie{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 10px;
+}
+
+#maggie .col-left{
+    width: 250px;
+    height: 360px;
+    padding-top: 30px;
+    margin-left: 75px;
+}
+
+#maggie .col-right{
+    width: 100%;
+}
+
+#maggie .cta {
+    border: 3px solid crimson;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    display: inline-block;
+    transition: .3s ease;
+    transition-property: background-color color;
+    font-size: 22px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Lobster Two';
+}
+#maggie .cta:hover{
+    background-color: rgb(102, 0, 128);
+    color: crimson;
+    border: 3px solid purple;
+}
+
+#maggie .col-right h1{
+    margin-top: 34px;
+    font-size: 3.1rem;
+    font-family: 'Pacifico';
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+#maggie .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: 'Great Vibes';
+}
+
+#maggie .col-right p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    justify-items: center;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+    font-family: 'Lobster Two';
+}
+
+#maggie .col-left .maggie-img{
+    position: relative;
+    border: 9px solid rgb(198, 20, 221);
+    height: 100%;
+    width: 100%;
+    background-color: #240135;
+    border-radius: 20px;
+}
+
+#maggie .col-left .maggie-img::after{
+    content: '';
+    position: absolute;
+    left: -33px;
+    top: 19px;
+    height: 98%;
+    width: 100%;
+    border: 9px solid crimson;
+    background-color: transparent;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+p{
+    text-transform: capitalize;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/*media queries*/
+
+@media only Screen and (min-width: 768px) {
+    #maggie.cta{
+        font-size: 4rem;
+        margin-top: 50px;
+        padding: 20px 50px;
+    }
+
+    #maggie .maggie{
+        flex-direction: row;
+    }
+
+     #maggie .col-right{
+        margin-left: 50px;
+     }
+
+     #maggie .col-right p{
+        text-align: left;
+        font-size: 20px;
+        line-height: 1.9rem;
+     }
+     
+
+     #maggie .col-left{
+        width: 500px;
+        height: 400px;
+        margin-top: 30px;
+     }
+     #maggie .col-left .maggie-img{
+        height: 380px;
+     }
+
+
+     #maggie .col-left .maggie-img::after{
+        left: -45px;
+        top: 34px;
+        height: 98%;
+        width: 98%;
+        border: 10px solid crimson;
+     }
+
+     #maggie .col-right h2 {
+        font-size: 33px;
+     }
+     #maggie .col-right h1{
+        font-size: 4rem;
+     }
+     
+}
+
+
+/*End media queries*/
